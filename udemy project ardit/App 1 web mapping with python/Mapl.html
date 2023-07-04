@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_220df34110273fa4ec102e87c9064a1a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_220df34110273fa4ec102e87c9064a1a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_220df34110273fa4ec102e87c9064a1a = L.map(
+                "map_220df34110273fa4ec102e87c9064a1a",
+                {
+                    center: [19.2, 72.8],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9937f768cf5667a20121e82cf0794fb4 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_220df34110273fa4ec102e87c9064a1a);
+        
+    
+            var feature_group_d49c372437f77da08dc09eee5e90e8ba = L.featureGroup(
+                {}
+            ).addTo(map_220df34110273fa4ec102e87c9064a1a);
+        
+    
+            var circle_marker_b237578c00ef2ad4c77a1ad737608598 = L.circleMarker(
+                [18.915877, 72.825527],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d49c372437f77da08dc09eee5e90e8ba);
+        
+    
+        var popup_f81c9f648ccf3e0f4406b548ba6508b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5802e5b212130a01892c5d85a5af7fa0 = $(`<div id="html_5802e5b212130a01892c5d85a5af7fa0" style="width: 100.0%; height: 100.0%;">Colaba Police Station</div>`)[0];
+                popup_f81c9f648ccf3e0f4406b548ba6508b7.setContent(html_5802e5b212130a01892c5d85a5af7fa0);
+            
+        
+
+        circle_marker_b237578c00ef2ad4c77a1ad737608598.bindPopup(popup_f81c9f648ccf3e0f4406b548ba6508b7)
+        ;
+
+        
+    
+    
+            var circle_marker_90949c0385f746832d69e7163e4547c4 = L.circleMarker(
+                [19.102894, 72.827918],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d49c372437f77da08dc09eee5e90e8ba);
+        
+    
+        var popup_2bb25be78f4b3338b2c8e9cf7f845ebd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_517797664548c4b0ef69abc05d13aa19 = $(`<div id="html_517797664548c4b0ef69abc05d13aa19" style="width: 100.0%; height: 100.0%;">Juhu Police Station</div>`)[0];
+                popup_2bb25be78f4b3338b2c8e9cf7f845ebd.setContent(html_517797664548c4b0ef69abc05d13aa19);
+            
+        
+
+        circle_marker_90949c0385f746832d69e7163e4547c4.bindPopup(popup_2bb25be78f4b3338b2c8e9cf7f845ebd)
+        ;
+
+        
+    
+    
+            var circle_marker_d3877b1b71ed6b7c1971e4418b632caf = L.circleMarker(
+                [19.060866, 72.834646],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d49c372437f77da08dc09eee5e90e8ba);
+        
+    
+        var popup_00bd84c4da2640df57a3f72b02c6a016 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57f7e030ff88f479e3e6db1cc346c870 = $(`<div id="html_57f7e030ff88f479e3e6db1cc346c870" style="width: 100.0%; height: 100.0%;">Bandra Police Station</div>`)[0];
+                popup_00bd84c4da2640df57a3f72b02c6a016.setContent(html_57f7e030ff88f479e3e6db1cc346c870);
+            
+        
+
+        circle_marker_d3877b1b71ed6b7c1971e4418b632caf.bindPopup(popup_00bd84c4da2640df57a3f72b02c6a016)
+        ;
+
+        
+    
+    
+            var circle_marker_25f4e33a1d80cd98ce6059e48adb7ddd = L.circleMarker(
+                [19.072112, 72.836242],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d49c372437f77da08dc09eee5e90e8ba);
+        
+    
+        var popup_67ab3ac7e83186d648ddc177d6044e91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65b0daed3229de0f7fa122d23b65dfe9 = $(`<div id="html_65b0daed3229de0f7fa122d23b65dfe9" style="width: 100.0%; height: 100.0%;">Khar Police Station</div>`)[0];
+                popup_67ab3ac7e83186d648ddc177d6044e91.setContent(html_65b0daed3229de0f7fa122d23b65dfe9);
+            
+        
+
+        circle_marker_25f4e33a1d80cd98ce6059e48adb7ddd.bindPopup(popup_67ab3ac7e83186d648ddc177d6044e91)
+        ;
+
+        
+    
+    
+            var circle_marker_2e332454e608b78418c8e046c86993fc = L.circleMarker(
+                [19.123634, 72.842767],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d49c372437f77da08dc09eee5e90e8ba);
+        
+    
+        var popup_c32250a9223fdabe9be63bd2e117f416 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4e88e68df986d33c332c70ae338ce69 = $(`<div id="html_e4e88e68df986d33c332c70ae338ce69" style="width: 100.0%; height: 100.0%;">Andheri Police Station</div>`)[0];
+                popup_c32250a9223fdabe9be63bd2e117f416.setContent(html_e4e88e68df986d33c332c70ae338ce69);
+            
+        
+
+        circle_marker_2e332454e608b78418c8e046c86993fc.bindPopup(popup_c32250a9223fdabe9be63bd2e117f416)
+        ;
+
+        
+    
+    
+            var circle_marker_9f7df5f2637f8c87543143267ca0c71b = L.circleMarker(
+                [19.084049, 72.837632],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d49c372437f77da08dc09eee5e90e8ba);
+        
+    
+        var popup_d6798d50dfb840b91a2c827d384ecfce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_561af78f7f6328a07a94547f55ba92f6 = $(`<div id="html_561af78f7f6328a07a94547f55ba92f6" style="width: 100.0%; height: 100.0%;">Santacruz Police Station</div>`)[0];
+                popup_d6798d50dfb840b91a2c827d384ecfce.setContent(html_561af78f7f6328a07a94547f55ba92f6);
+            
+        
+
+        circle_marker_9f7df5f2637f8c87543143267ca0c71b.bindPopup(popup_d6798d50dfb840b91a2c827d384ecfce)
+        ;
+
+        
+    
+    
+            var circle_marker_3631ef28db5a06824be94134f5e178eb = L.circleMarker(
+                [18.957134, 72.80595],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d49c372437f77da08dc09eee5e90e8ba);
+        
+    
+        var popup_c69fa8e843297b044ed95acd7db1ba1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0c88f56d73d029de80e6707f7be97ff = $(`<div id="html_d0c88f56d73d029de80e6707f7be97ff" style="width: 100.0%; height: 100.0%;">Gamdevi Police Station</div>`)[0];
+                popup_c69fa8e843297b044ed95acd7db1ba1f.setContent(html_d0c88f56d73d029de80e6707f7be97ff);
+            
+        
+
+        circle_marker_3631ef28db5a06824be94134f5e178eb.bindPopup(popup_c69fa8e843297b044ed95acd7db1ba1f)
+        ;
+
+        
+    
+    
+            var circle_marker_a1f9cfcfac94539d2d1478641a918e21 = L.circleMarker(
+                [18.955277, 72.798401],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d49c372437f77da08dc09eee5e90e8ba);
+        
+    
+        var popup_2f320a2934982ec0509e32cc1b89987e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09d29a8ba7c4b011c31be13147a9599d = $(`<div id="html_09d29a8ba7c4b011c31be13147a9599d" style="width: 100.0%; height: 100.0%;">Malabar Hill Police Station</div>`)[0];
+                popup_2f320a2934982ec0509e32cc1b89987e.setContent(html_09d29a8ba7c4b011c31be13147a9599d);
+            
+        
+
+        circle_marker_a1f9cfcfac94539d2d1478641a918e21.bindPopup(popup_2f320a2934982ec0509e32cc1b89987e)
+        ;
+
+        
+    
+    
+            var circle_marker_b8fbc08cffe0da3d82615a832c950b02 = L.circleMarker(
+                [18.970117, 72.813882],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d49c372437f77da08dc09eee5e90e8ba);
+        
+    
+        var popup_ca8bc593d078e91a19c706faab79cc63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1025f119f136b4bd72c607bab113c46 = $(`<div id="html_b1025f119f136b4bd72c607bab113c46" style="width: 100.0%; height: 100.0%;">Mumbai Central Police Station</div>`)[0];
+                popup_ca8bc593d078e91a19c706faab79cc63.setContent(html_b1025f119f136b4bd72c607bab113c46);
+            
+        
+
+        circle_marker_b8fbc08cffe0da3d82615a832c950b02.bindPopup(popup_ca8bc593d078e91a19c706faab79cc63)
+        ;
+
+        
+    
+    
+            var circle_marker_a5a7a9847de7cdeedd65e514d4fae100 = L.circleMarker(
+                [19.250714, 72.859193],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d49c372437f77da08dc09eee5e90e8ba);
+        
+    
+        var popup_c78eb62b26199c72d653957b38a1ef1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74ea114d9227f91f0bb80d6347fbafb2 = $(`<div id="html_74ea114d9227f91f0bb80d6347fbafb2" style="width: 100.0%; height: 100.0%;">Dahisar Police Station</div>`)[0];
+                popup_c78eb62b26199c72d653957b38a1ef1b.setContent(html_74ea114d9227f91f0bb80d6347fbafb2);
+            
+        
+
+        circle_marker_a5a7a9847de7cdeedd65e514d4fae100.bindPopup(popup_c78eb62b26199c72d653957b38a1ef1b)
+        ;
+
+        
+    
+    
+            var layer_control_a2ad9222e5b9bf01cc9b22b2b9d3e293 = {
+                base_layers : {
+                    "stamenterrain" : tile_layer_9937f768cf5667a20121e82cf0794fb4,
+                },
+                overlays :  {
+                    "My map" : feature_group_d49c372437f77da08dc09eee5e90e8ba,
+                },
+            };
+            L.control.layers(
+                layer_control_a2ad9222e5b9bf01cc9b22b2b9d3e293.base_layers,
+                layer_control_a2ad9222e5b9bf01cc9b22b2b9d3e293.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_220df34110273fa4ec102e87c9064a1a);
+        
+</script>
+</html>
